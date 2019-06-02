@@ -132,6 +132,7 @@ class ComposerStaticInita5c69b25a4d0d3c97d59332faf296036
         array (
             0 => __DIR__ . '/..' . '/behat/mink-browserkit-driver/src',
             1 => __DIR__ . '/..' . '/behat/mink-goutte-driver/src',
+            2 => __DIR__ . '/..' . '/behat/mink-selenium2-driver/src',
         ),
         'Behat\\Mink\\' => 
         array (
@@ -145,6 +146,13 @@ class ComposerStaticInita5c69b25a4d0d3c97d59332faf296036
             'phpDocumentor' => 
             array (
                 0 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            ),
+        ),
+        'W' => 
+        array (
+            'WebDriver' => 
+            array (
+                0 => __DIR__ . '/..' . '/instaclick/php-webdriver/lib',
             ),
         ),
         'T' => 

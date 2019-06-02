@@ -4,7 +4,7 @@ Feature: Product Admin Area
   I need to be able to add/edit/delete products
 
   Scenario: List available products
-    Given There are 5 products
+    Given there are 5 products
     And I am on "/admin"
     When I click "Products"
     Then I should see 5 products

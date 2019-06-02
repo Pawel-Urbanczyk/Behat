@@ -72,3 +72,7 @@ e141e1,127.0.0.1,GET,http://127.0.0.1:8000/,1559477594,,200
 9e31e0,127.0.0.1,GET,http://127.0.0.1:8000/favicon.ico,1559491637,,404
 beb0ef,127.0.0.1,GET,http://localhost:8000/,1559491865,,200
 be89ad,127.0.0.1,GET,http://localhost:8000/search?searchTerm=Samsung,1559491866,,200
+e0c280,127.0.0.1,GET,http://localhost:8000/admin/products,1559500030,,302
+b841c9,127.0.0.1,GET,http://localhost:8000/login,1559500031,,200
+4646e5,127.0.0.1,GET,http://localhost:8000/,1559500031,,200
+7a84bb,127.0.0.1,GET,http://localhost:8000/search?searchTerm=Samsung,1559500032,,200

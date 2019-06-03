@@ -193,4 +193,15 @@ class FeatureContext extends RawMinkContext implements Context, SnippetAccepting
         fwrite(STDOUT, "\033[u");
         return;
     }
+
+    /**
+     * Saving a screenshot
+     *
+     * @When I save a screenshot to :filename
+     */
+    public function iSaveAScreenshotIn($filename)
+    {
+        sleep(1);
+        $this->saveScreenshot($filename, __DIR__.'/../../');
+    }
 }

@@ -105,7 +105,7 @@ class FeatureContext extends RawMinkContext implements Context, SnippetAccepting
     }
 
     /**
-     * @Given there are :count products
+     * @Given there is/are :count product(s)
      */
     public function thereAreProducts($count)
     {
@@ -204,4 +204,41 @@ class FeatureContext extends RawMinkContext implements Context, SnippetAccepting
         sleep(1);
         $this->saveScreenshot($filename, __DIR__.'/../../');
     }
+
+    /**
+     * @Given the following product exist:
+     */
+    public function theFollowingProductExist(TableNode $table)
+    {
+        $em = $this->getEntityManager();
+
+        foreach ($table as $row){
+
+                $product = new Product();
+                $product->setName($row['name']);
+                $product->setPrice(rand(10, 1000));
+                $product->setDescription('lorem');
+
+                if($row['is published'] == 'yes'){
+                    $product->setIsPublished(true);
+                }
+
+                $em->persist($product);
+        }
+        $em->flush();
+    }
+
+    /**
+     * @Then the :rowText row should have a check mark
+     */
+    public function theRowShouldHaveACheckMark($rowText)
+    {
+        $row = $this->getPage()->find('css', sprintf('table tr:contains("%s")', $rowText));
+        assertNotNull($row, 'Could not find a row with text '.$rowText);
+
+        assertContains('fa-check', $row->getHtml(), 'Did not find the check in the row');
+    }
+
+
+
 }

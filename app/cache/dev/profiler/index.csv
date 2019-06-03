@@ -94,3 +94,5 @@ cf5b4c,127.0.0.1,GET,http://localhost:8000/search?searchTerm=Samsung,1559543990,
 ecf5b6,127.0.0.1,GET,http://127.0.0.1:8000/,1559544204,,200
 ddad5d,127.0.0.1,GET,http://127.0.0.1:8000/admin,1559544205,,302
 7bd251,127.0.0.1,GET,http://127.0.0.1:8000/login,1559544205,,200
+002f65,127.0.0.1,GET,http://localhost:8000/,1559548225,,200
+8bfc4a,127.0.0.1,GET,http://localhost:8000/search?searchTerm=Samsung,1559548226,,200

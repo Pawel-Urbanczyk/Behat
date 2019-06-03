@@ -96,3 +96,15 @@ ddad5d,127.0.0.1,GET,http://127.0.0.1:8000/admin,1559544205,,302
 7bd251,127.0.0.1,GET,http://127.0.0.1:8000/login,1559544205,,200
 002f65,127.0.0.1,GET,http://localhost:8000/,1559548225,,200
 8bfc4a,127.0.0.1,GET,http://localhost:8000/search?searchTerm=Samsung,1559548226,,200
+d0aa92,127.0.0.1,GET,http://localhost:8000/,1559548357,,200
+ff33f8,127.0.0.1,GET,http://localhost:8000/search?searchTerm=Samsung,1559548357,,200
+1d19f7,127.0.0.1,GET,http://localhost:8000/,1559548358,,200
+e96267,127.0.0.1,GET,http://localhost:8000/search?searchTerm=Xbox,1559548358,,200
+ffa8dd,127.0.0.1,GET,http://localhost:8000/,1559548676,,200
+fb5b59,127.0.0.1,GET,http://localhost:8000/search?searchTerm=Samsung,1559548676,,200
+5e5296,127.0.0.1,GET,http://localhost:8000/,1559548677,,200
+846763,127.0.0.1,GET,http://localhost:8000/search?searchTerm=Xbox,1559548677,,200
+686776,127.0.0.1,GET,http://localhost:8000/,1559548772,,200
+1b4b0d,127.0.0.1,GET,http://localhost:8000/search?searchTerm=Samsung,1559548773,,200
+1e0087,127.0.0.1,GET,http://localhost:8000/,1559548773,,200
+5c62b3,127.0.0.1,GET,http://localhost:8000/search?searchTerm=Xbox,1559548773,,200

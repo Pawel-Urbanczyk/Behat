@@ -7,6 +7,7 @@ use Behat\MinkExtension\Context\MinkContext;
 use Behat\Behat\Context\SnippetAcceptingContext;
 use Behat\MinkExtension\Context\RawMinkContext;
 use AppBundle\Entity\User;
+use AppBundle\Entity\Product;
 use Behat\Symfony2Extension\Context\KernelDictionary;
 use Doctrine\Common\DataFixtures\Purger\ORMPurger;
 
@@ -66,6 +67,14 @@ class FeatureContext extends RawMinkContext implements Context, SnippetAccepting
     }
 
     /**
+     * @return \Doctrine\ORM\EntityManager
+     */
+    private function getEntityManager()
+    {
+        return $this->getContainer()->get('doctrine.orm.entity_manager');
+    }
+
+    /**
      * @Given there is an admin user :username with password :password
      */
     public function thereIsAnAdminUserWithPassword($username, $password)
@@ -91,5 +100,51 @@ class FeatureContext extends RawMinkContext implements Context, SnippetAccepting
         $purger->purge();
     }
 
+    /**
+     * @Given there are :count products
+     */
+    public function thereAreProducts($count)
+    {
+        $em = $this->getEntityManager();
+        for ($i=0;$i < $count; $i++){
+            $product = new Product();
+            $product->setName('Product '.$i);
+            $product->setPrice(rand(10, 1000));
+            $product->setDescription('lorem');
+            $em->persist($product);
+            $em->flush();
+        }
+    }
 
+    /**
+     * @When I click :linkText
+     */
+    public function iClick($linkText)
+    {
+        $this->getPage()->clickLink($linkText);
+    }
+
+    /**
+     * @Then I should see :count products
+     */
+    public function iShouldSeeProducts($count)
+    {
+        $table = $this->getPage()->find('css','table.table');
+        assertNotNull($table, 'Could not find a table');
+
+        assertCount(intval($count), $table->findAll('css', 'tbody tr'));
+    }
+
+    /**
+     * @Given I am logged in as an admin
+     */
+    public function iAmLoggedInAsAnAdmin()
+    {
+        $this->thereIsAnAdminUserWithPassword('admin', 'admin');
+        $this->visitPath('/login');
+        $this->getPage()->fillField('Username', 'admin');
+        $this->getPage()->fillField('Password', 'admin');
+        $this->getPage()->pressButton('Login');
+
+    }
 }

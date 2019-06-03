@@ -170,4 +170,16 @@ class FeatureContext extends RawMinkContext implements Context, SnippetAccepting
         $em->flush();
     }
 
+    /**
+     * @When I wait for the modal to load
+     */
+    public function iWaitForTheModalToLoad()
+    {
+        $this->getSession()->wait(
+            5000,
+            " $('.modal:visible').length");
+    }
+
+
+
 }

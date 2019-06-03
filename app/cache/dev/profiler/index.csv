@@ -108,3 +108,13 @@ fb5b59,127.0.0.1,GET,http://localhost:8000/search?searchTerm=Samsung,1559548676,
 1b4b0d,127.0.0.1,GET,http://localhost:8000/search?searchTerm=Samsung,1559548773,,200
 1e0087,127.0.0.1,GET,http://localhost:8000/,1559548773,,200
 5c62b3,127.0.0.1,GET,http://localhost:8000/search?searchTerm=Xbox,1559548773,,200
+39e90d,127.0.0.1,GET,http://localhost:8000/,1559549121,,200
+469165,127.0.0.1,GET,http://localhost:8000/,1559549122,,200
+6bc109,127.0.0.1,GET,http://localhost:8000/,1559549471,,200
+576660,127.0.0.1,GET,http://localhost:8000/search?searchTerm=Samsung,1559549472,,200
+7eb032,127.0.0.1,GET,http://localhost:8000/,1559549472,,200
+dd1b48,127.0.0.1,GET,http://localhost:8000/search?searchTerm=Xbox,1559549473,,200
+4275cb,127.0.0.1,GET,http://localhost:8000/,1559549620,,200
+14ff06,127.0.0.1,GET,http://localhost:8000/search?searchTerm=Samsung,1559549620,,200
+3cfe93,127.0.0.1,GET,http://localhost:8000/,1559549620,,200
+eb0845,127.0.0.1,GET,http://localhost:8000/search?searchTerm=Xbox,1559549621,,200

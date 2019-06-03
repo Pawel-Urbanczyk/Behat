@@ -154,3 +154,7 @@ f63e17,127.0.0.1,GET,http://localhost:8000/,1559559304,,200
 8e3754,127.0.0.1,GET,http://localhost:8000/login,1559559305,,200
 44a67c,127.0.0.1,POST,http://localhost:8000/admin/login_check,1559559306,,302
 ee96ce,127.0.0.1,GET,http://localhost:8000/,1559559306,,200
+b2a5d0,127.0.0.1,GET,http://localhost:8000/,1559559978,,200
+1e81f8,127.0.0.1,GET,http://localhost:8000/login,1559559979,,200
+539829,127.0.0.1,POST,http://localhost:8000/admin/login_check,1559559980,,302
+27cf5e,127.0.0.1,GET,http://localhost:8000/,1559559980,,200

@@ -6,6 +6,7 @@ use Behat\Gherkin\Node\TableNode;
 use Behat\MinkExtension\Context\MinkContext;
 use Behat\Behat\Context\SnippetAcceptingContext;
 use Behat\MinkExtension\Context\RawMinkContext;
+use AppBundle\Entity\User;
 
 
 require_once __DIR__.'/../../vendor/phpunit/phpunit/src/Framework/Assert/Functions.php';
@@ -14,6 +15,9 @@ require_once __DIR__.'/../../vendor/phpunit/phpunit/src/Framework/Assert/Functio
  */
 class FeatureContext extends RawMinkContext implements Context, SnippetAcceptingContext
 {
+
+    private static $container;
+
     /**
      * Initializes context.
      *
@@ -24,6 +28,20 @@ class FeatureContext extends RawMinkContext implements Context, SnippetAccepting
     public function __construct()
     {
 
+    }
+
+    /**
+     * @BeforeSuite
+     */
+    public static function bootstrapSymfony()
+    {
+        require __DIR__.'/../../app/autoload.php';
+        require __DIR__.'/../../app/AppKernel.php';
+
+        $kernel = new AppKernel('test', true);
+        $kernel->boot();
+
+        self::$container = $kernel->getContainer();
     }
 
     /**
@@ -59,6 +77,21 @@ class FeatureContext extends RawMinkContext implements Context, SnippetAccepting
         return $this->getSession()->getPage();
     }
 
+    /**
+     * @Given there is an admin user :username with password :password
+     */
+    public function thereIsAnAdminUserWithPassword($username, $password)
+    {
+        $user = new User();
+        $user->setUsername($username);
+        $user->setPlainPassword($password);
+        $user->setRoles(array('ROLE_ADMIN'));
+
+        $em = self::$container->get('doctrine')->getManager();
+
+        $em->persist($user);
+        $em->flush();
+    }
 
 
 }

@@ -5,10 +5,10 @@ Feature: Authentication
 
 
   Scenario: LoggingIn
-    Given there is an admin user "admin" with password "admin"
+    Given there is an admin user "admin2" with password "admin"
     And I am on "/"
     When I follow "Login"
-    And I fill in "Username" with "admin"
+    And I fill in "Username" with "admin2"
     And I fill in "Password" with "admin"
     And I press "Login"
     Then I should see "Logout"

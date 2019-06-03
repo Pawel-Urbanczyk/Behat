@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="892a924b-7cb0-47ed-8113-a3447f9aa673" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/features/bootstrap/CommandLineProcessContext.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" beforeDir="false" afterPath="$PROJECT_DIR$/app/cache/dev/profiler/index.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/behat.yml" beforeDir="false" afterPath="$PROJECT_DIR$/behat.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/authentication.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/web/authentication.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/bootstrap/FeatureContext.php" beforeDir="false" afterPath="$PROJECT_DIR$/features/bootstrap/FeatureContext.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/fence_api.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/web/fence_api.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/ls.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/commands/ls.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/product_admin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/web/product_admin.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/search.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/web/search.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/web/authentication.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/web/authentication.feature" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/features/web/authentication.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+            <state relative-caret-position="2">
+              <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -89,11 +82,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/behat.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="375">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -128,6 +121,7 @@
         <option value="$PROJECT_DIR$/features/bootstrap/FeatureContext.php" />
         <option value="$PROJECT_DIR$/features/bootstrap/CommandLineProcessContext.php" />
         <option value="$PROJECT_DIR$/behat.yml" />
+        <option value="$PROJECT_DIR$/features/web/authentication.feature" />
       </list>
     </option>
   </component>
@@ -301,12 +295,12 @@
       <workItem from="1559490727916" duration="6678000" />
       <workItem from="1559542441823" duration="50000" />
       <workItem from="1559542507018" duration="260000" />
-      <workItem from="1559542997979" duration="7827000" />
+      <workItem from="1559542997979" duration="8358000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20772000" />
+    <option name="totallyTimeSpent" value="21303000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -324,7 +318,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3564464" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.9674973" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -456,13 +450,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/web/authentication.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/web/product_admin.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -509,8 +496,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/behat.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="375">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/web/authentication.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2">
+          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
         </state>
       </provider>
     </entry>

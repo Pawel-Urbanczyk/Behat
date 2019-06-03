@@ -135,6 +135,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 return array (  '_controller' => 'AppBundle\\Controller\\ProductAdminController::newAction',  '_route' => 'product_new',);
             }
 
+            // product_delete
+            if (0 === strpos($pathinfo, '/admin/products/delete') && preg_match('#^/admin/products/delete/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'product_delete')), array (  '_controller' => 'AppBundle\\Controller\\ProductAdminController::deleteAction',));
+            }
+
         }
 
         // login

@@ -48,4 +48,18 @@ class ProductAdminController extends Controller
 
         return $this->render('product/new.html.twig');
     }
+
+    /**
+     * @Route("/admin/products/delete/{id}", name="product_delete")
+     */
+    public function deleteAction(Product $product)
+    {
+        $em = $this->getDoctrine()->getEntityManager();
+        $em->remove($product);
+        $em->flush();
+
+        $this->addFlash('success', 'The product was deleted');
+
+        return $this->redirectToRoute('product_list');
+    }
 }

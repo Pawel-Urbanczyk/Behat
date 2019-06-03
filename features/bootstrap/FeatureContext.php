@@ -219,7 +219,7 @@ class FeatureContext extends RawMinkContext implements Context, SnippetAccepting
                 $product->setPrice(rand(10, 1000));
                 $product->setDescription('lorem');
 
-                if($row['is published'] == 'yes'){
+                if(isset($row['is published']) && $row['is published'] == 'yes'){
                     $product->setIsPublished(true);
                 }
 
@@ -233,12 +233,29 @@ class FeatureContext extends RawMinkContext implements Context, SnippetAccepting
      */
     public function theRowShouldHaveACheckMark($rowText)
     {
-        $row = $this->getPage()->find('css', sprintf('table tr:contains("%s")', $rowText));
-        assertNotNull($row, 'Could not find a row with text '.$rowText);
+        $row = $this->findRowByText($rowText);
 
         assertContains('fa-check', $row->getHtml(), 'Did not find the check in the row');
     }
 
+    /**
+     * @When I press :buttonText in the :rowText row
+     */
+    public function iPressInTheRow($buttonText, $rowText)
+    {
+        $this->findRowByText($rowText)->pressButton($buttonText);
+    }
 
+    /**
+     * @param $rowText
+     * @return \Behat\Mink\Element\NodeElement|mixed|null
+     */
+    private function findRowByText($rowText)
+    {
+        $row = $this->getPage()->find('css', sprintf('table tr:contains("%s")', $rowText));
+        assertNotNull($row, 'Could not find a row with text '.$rowText);
+
+        return $row;
+    }
 
 }

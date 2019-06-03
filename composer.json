@@ -21,5 +21,8 @@
         "psr-0": {
             "": "src/"
         }
+    },
+    "require-dev": {
+        "behat/symfony2-extension": "^2.1"
     }
 }

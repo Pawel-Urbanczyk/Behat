@@ -226,6 +226,10 @@ class ComposerStaticInita5c69b25a4d0d3c97d59332faf296036
             array (
                 0 => __DIR__ . '/..' . '/behat/behat/src',
             ),
+            'Behat\\Symfony2Extension' => 
+            array (
+                0 => __DIR__ . '/..' . '/behat/symfony2-extension/src',
+            ),
             'Behat\\MinkExtension' => 
             array (
                 0 => __DIR__ . '/..' . '/behat/mink-extension/src',

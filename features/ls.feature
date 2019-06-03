@@ -3,7 +3,6 @@ Feature: ls
   As a UNIX user
   I need be able to list the current directory's content
 
-  Background:
 
   Scenario: List 2 files in a directory
     Given there is a file named "john"

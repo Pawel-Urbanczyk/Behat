@@ -463,3 +463,17 @@ ee54b7,127.0.0.1,GET,http://localhost:8000/,1559587586,,200
 eded77,127.0.0.1,GET,http://localhost:8000/admin/products,1559587587,,200
 51ddf0,127.0.0.1,GET,http://localhost:8000/admin/products/delete/2,1559587587,,302
 1795ed,127.0.0.1,GET,http://localhost:8000/admin/products,1559587588,,200
+e9054e,127.0.0.1,GET,http://127.0.0.1:8000/admin/products,1559587629,,200
+1d4dc5,127.0.0.1,GET,http://127.0.0.1:8000/admin/products,1559587631,,200
+8ab19d,127.0.0.1,GET,http://localhost:8000/,1559587683,,200
+66145f,127.0.0.1,GET,http://localhost:8000/search?searchTerm=Samsung,1559587684,,200
+2f3de6,127.0.0.1,GET,http://localhost:8000/,1559587684,,200
+4f924a,127.0.0.1,GET,http://localhost:8000/search?searchTerm=Xbox,1559587685,,200
+08482c,127.0.0.1,GET,http://localhost:8000/,1559588155,,200
+d8227d,127.0.0.1,GET,http://localhost:8000/search?searchTerm=Samsung,1559588156,,200
+0ebb7c,127.0.0.1,GET,http://localhost:8000/,1559588157,,200
+d0e583,127.0.0.1,GET,http://localhost:8000/search?searchTerm=Xbox,1559588157,,200
+83d465,127.0.0.1,GET,http://localhost:8000/,1559588251,,200
+a93621,127.0.0.1,GET,http://localhost:8000/search?searchTerm=Samsung,1559588251,,200
+f7d36c,127.0.0.1,GET,http://localhost:8000/,1559588252,,200
+66b8ff,127.0.0.1,GET,http://localhost:8000/search?searchTerm=Xbox,1559588253,,200

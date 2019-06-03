@@ -210,3 +210,15 @@ a4e252,127.0.0.1,GET,http://127.0.0.1:8000/admin/products,1559563749,,200
 14d1ab,127.0.0.1,GET,http://localhost:8000/,1559563804,,200
 17f011,127.0.0.1,GET,http://localhost:8000/admin,1559563804,,200
 7017a7,127.0.0.1,GET,http://localhost:8000/admin/products,1559563805,,200
+72e40d,127.0.0.1,GET,http://127.0.0.1:8000/admin/products,1559575424,,200
+45c5d8,127.0.0.1,GET,http://localhost:8000/login,1559575452,,200
+50fbbb,127.0.0.1,POST,http://localhost:8000/admin/login_check,1559575452,,302
+f43900,127.0.0.1,GET,http://localhost:8000/,1559575453,,200
+273625,127.0.0.1,GET,http://localhost:8000/login,1559575792,,200
+0b093d,127.0.0.1,POST,http://localhost:8000/admin/login_check,1559575793,,302
+775f22,127.0.0.1,GET,http://localhost:8000/,1559575793,,200
+668993,127.0.0.1,GET,http://localhost:8000/admin/products,1559575794,,200
+dd7603,127.0.0.1,GET,http://localhost:8000/login,1559575952,,200
+877b58,127.0.0.1,POST,http://localhost:8000/admin/login_check,1559575953,,302
+d105dc,127.0.0.1,GET,http://localhost:8000/,1559575954,,200
+0ec6a2,127.0.0.1,GET,http://localhost:8000/admin/products,1559575954,,200

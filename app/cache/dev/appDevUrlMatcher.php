@@ -124,9 +124,17 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'AppBundle\\Controller\\MainController::dbRebuildAction',  '_route' => 'db_rebuild',);
         }
 
-        // product_list
-        if ($pathinfo === '/admin/products') {
-            return array (  '_controller' => 'AppBundle\\Controller\\ProductAdminController::listAction',  '_route' => 'product_list',);
+        if (0 === strpos($pathinfo, '/admin/products')) {
+            // product_list
+            if ($pathinfo === '/admin/products') {
+                return array (  '_controller' => 'AppBundle\\Controller\\ProductAdminController::listAction',  '_route' => 'product_list',);
+            }
+
+            // product_new
+            if ($pathinfo === '/admin/products/new') {
+                return array (  '_controller' => 'AppBundle\\Controller\\ProductAdminController::newAction',  '_route' => 'product_new',);
+            }
+
         }
 
         // login
